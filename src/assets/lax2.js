@@ -150,7 +150,11 @@
 
       //if (withinView(lbegin) || withinView(lend) || renderAll){
       if ((lbegin < top && top < lend) || renderAll === true){
-        var pct = lbegin ? (bottom - lbegin) / lspread : (top / lspread || 0);
+        //var pct = lbegin ? (bottom - lbegin) / lspread : (top / lspread || 0);
+        var pct = lbegin ? (top - lbegin) / lspread : (top / lspread || 0);
+        if (i == 2){
+          console.log(pct);
+        }
         pct = Math.min(Math.max(pct, 0), 1);
         lx.tween.seek(pct);
       }
@@ -225,17 +229,17 @@
     // lets the begin value
     i = tweensl;
     while (i--){
-      var lx = laxtweens[i];
-      var el = lx.container ? lx.container : lx.el;
-      var bounds = el.eq(0)[0].getBoundingClientRect();
-      var lxtop = bounds.top;
+      let lx = laxtweens[i];
+      let el = lx.container || lx.el;
+      let bounds = el.eq(0)[0].getBoundingClientRect();
+      let lxtop = bounds.top - laxheight;
       lx.begin = lxtop < laxheight ? 0 : lxtop;
     }
 
     // then set the end transform
     i = tweensl;
     while (i--){
-      var lx = laxtweens[i];
+      let lx = laxtweens[i];
       TweenLite.set(lx.el, jQuery.extend({}, lx.to));
     }
 
@@ -246,7 +250,7 @@
       var el = lx.container ? lx.container : lx.el;
       var bounds = el.eq(0)[0].getBoundingClientRect();
       lx.end = bounds.bottom;
-      lx.spread = lx.begin ? lx.end - lx.begin + laxheight : lx.end;
+      lx.spread = lx.begin ? lx.end - lx.begin : lx.end;
     }
 
     resetTweens();

@@ -6,7 +6,7 @@ html{
 	width: 100%;
 }
 body{
-  background: #aaaaaa;
+  background: #00171F;
 	
   width: 100%;
   
@@ -269,7 +269,7 @@ article .content{
   position: relative;
   float: left;
   width: 100%;
-  max-width: 70%;
+  max-width: 60%;
 }
 .thumbs,
 .thumbs img{
@@ -284,7 +284,7 @@ article .content{
 .thumbs img{
   width: auto;
   margin: 0px 15px 0px 0px;
-  max-width: calc(33.3% - 15px)
+  max-width: calc(33.3% - 10px);
 }
 .thumbs img:last-child{
   margin: 0px;
@@ -296,6 +296,14 @@ article .content{
   transition-delay: 600ms;
 }
 
+article.article-right .copy,
+article.article-right .btn{
+  float: right;
+  text-align: right;
+}
+article.article-right .copy h2{
+
+}
 
 
 header img{
@@ -306,7 +314,7 @@ header img{
   max-width: 100%;
 }
 .bgs,
-.bgs div{
+[data-bg]{
   display: block;
   position: absolute;
   float: none;
@@ -330,7 +338,8 @@ header img{
 .bgs{
   height: calc(100% + 100px);
 }
-.bgs div{
+.bgs div,
+[data-bg]{
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -354,7 +363,10 @@ header img{
 .lax-fadein{
   opacity: 0;
   transform: translate(0px, 70px);
-  transition: all 1300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:
+    opacity 1300ms cubic-bezier(0.645, 0.045, 0.355, 1),
+    transform 1300ms cubic-bezier(0.645, 0.045, 0.355, 1)
+  ;
 }
 .ready #top .content > div,
 .lax-fadein.lax-active{
@@ -416,4 +428,31 @@ nav li{
   position: relative;
   float: none;
   padding: 0px 12px;
+}
+
+[transportation]{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  position: absolute;
+  float: none;
+  left: 0px;
+  width: 100%;
+  top: 0px;
+}
+#transportation [data-bg]{
+  /*transition-delay: 400ms;*/
+}
+#transportation [data-bg="0"]{
+  background-image: url(images/transportation.png);
+  height: calc(100% + 100px);
+}
+#transportation [data-bg="1"]{
+  background-image: url(images/transportation-roads.png);
+  height: calc(100% + 125px);
+}
+#transportation [data-bg="2"]{
+  background-image: url(images/transportation-marks.png);
+  height: calc(100% + 100px);
 }
