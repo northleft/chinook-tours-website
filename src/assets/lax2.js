@@ -46,17 +46,17 @@
   }
   
   function laxAddTweenObject(el){
-    var that = $(el);
-    var def = that.attr('data-lax').split(',');
+    let that = $(el);
+    let def = that.attr('data-lax').split(',');
     
-    var
+    let
       to = {},
       from = {}
     
-    var i = def.length;
+    let i = def.length;
     while(i--){
-      var d = def[i].split(':');
-      var v = d[1];
+      let d = def[i].split(':');
+      let v = d[1];
       d = d[0];
       v = parseFloat(v) || v;
       v = v == '0' ? 0 : v;
@@ -66,11 +66,11 @@
     }
     
     if (to.scale){
-      var s = to.scale - 1;
+      let s = to.scale - 1;
       from.scale = 1 - s;
     }
     
-    var laxName = that.attr('data-lax-name');
+    let laxName = that.attr('data-lax-name');
     if (laxName){
       $('[data-lax-attach="' + laxName + '"]').each(function(index, el) {
         that = that.add(el)
@@ -81,17 +81,36 @@
       to.ease = from.ease = Linear.easeNone;
     }
 
-    var container = that.closest('[lax-container]');
+    let container = that.closest('[lax-container]');
 
-    laxtweens.push({
+    let delay = parseFloat(that.attr('data-lax-delay'));
+    var obj = {
       container: container.length ? container : false,
       to: to,
       from: from,
       el: that,
       begin: false,
       end: false,
-      tween: false
-    });
+      tween: false,
+      _v: {v:0},
+      delay: delay || false
+    };
+
+    function _seek(v){
+      obj.tween.seek(v);
+    }
+    function _seekDelay(v){
+      TweenLite.to(obj._v, obj.delay, {
+        v:v,
+        onUpdate: function(){
+          obj.tween.seek(obj._v.v);
+        }
+      });
+    }
+
+    obj.seek = delay ? _seekDelay : _seek;
+
+    laxtweens.push(obj);
   }
 
   function laxAddRevealObject(el){
@@ -152,11 +171,9 @@
       if ((lbegin < top && top < lend) || renderAll === true){
         //var pct = lbegin ? (bottom - lbegin) / lspread : (top / lspread || 0);
         var pct = lbegin ? (top - lbegin) / lspread : (top / lspread || 0);
-        if (i == 2){
-          console.log(pct);
-        }
         pct = Math.min(Math.max(pct, 0), 1);
-        lx.tween.seek(pct);
+        //lx.tween.seek(pct);
+        lx.seek(pct);
       }
     }
 
@@ -322,7 +339,6 @@
     (lax.iscroll || laxwin).on('scroll', function(){
       laxtop = returnTop();
       rAF(laxScroll);
-      //laxScroll();
     });
 
     var laxResizeInt;

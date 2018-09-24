@@ -198,6 +198,7 @@ body > div{
   width: 100%;
 }
 
+main,
 main > div,
 header,
 article,
@@ -207,9 +208,8 @@ footer{
   float: left;
   width: 100%;
 }
-main{
-  display: block;
-  position: absolute;
+.mobile main{
+  position: fixed;
   float: none;
   top: 0px;
   left: 0px;
@@ -446,13 +446,13 @@ nav li{
 }
 #transportation [data-bg="0"]{
   background-image: url(images/transportation.png);
-  height: calc(100% + 100px);
+  height: calc(100% + 150px);
 }
 #transportation [data-bg="1"]{
   background-image: url(images/transportation-roads.png);
-  height: calc(100% + 125px);
+  height: calc(100% + 150px);
 }
 #transportation [data-bg="2"]{
   background-image: url(images/transportation-marks.png);
-  height: calc(100% + 100px);
+  height: calc(100% + 150px);
 }
