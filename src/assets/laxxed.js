@@ -167,14 +167,25 @@
       var lend = lx.end;
       var lspread = lx.spread;
 
+      if (i == 0){
+        //console.log(top, lbegin, lend, lspread, (lbegin < top && top < lend));
+        //console.log(top, lbegin, lend, bottom, withinView(lbegin), withinView(lend), lbegin <= top && lend >= bottom);
+      }
+
       //if (withinView(lbegin) || withinView(lend) || renderAll){
-      if ((lbegin < top && top < lend) || renderAll === true){
+      //if ((lbegin < top && top < lend) || renderAll === true){
+      if (withinView(lbegin) || withinView(lend) || (lbegin <= top && lend >= bottom) || renderAll === true){
         //var pct = lbegin ? (bottom - lbegin) / lspread : (top / lspread || 0);
         var pct = lbegin ? (top - lbegin) / lspread : (top / lspread || 0);
+        //console.log(top, lspread, top / lspread);
         pct = Math.min(Math.max(pct, 0), 1);
         //lx.tween.seek(pct);
         lx.seek(pct);
       }
+    }
+
+    function withinView(t){
+      return top <= t && t <= bottom;
     }
 
     i = laxclasses.length;

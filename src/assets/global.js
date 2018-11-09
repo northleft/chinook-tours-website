@@ -104,8 +104,56 @@ $(document).ready(function(){
 
     main.on('touchstart', function(){
       iscrl.refresh();
-    })
+    });
   }
+
+  $('.bgs').each(function(){
+    var imgLoad = [];
+    var bg = $(this);
+    var bgs = bg.find('[data-bg]');
+    
+    bgs.each(function(){
+      var b = $(this).attr('preloading', true);
+      var src = b.css('background-image');
+      
+      src = src.substring(src.indexOf('(') + 1, src.lastIndexOf(')')).replace(/"/g, '').replace(/'/g, '');
+      
+      imgLoad.push({
+        el: b,
+        src: src
+      });
+    });
+
+    function slideshow(index){
+      var loaded = bgs.eq(index).attr('loaded') !== null;
+
+      if (loaded){
+        bg.attr('data-show', index);
+        index = (index + 1) % bgs.length;
+      }
+
+      setTimeout(function(){
+        slideshow(index);
+      }, loaded ? 8000 : 1000);
+    }
+    slideshow(0);
+
+    function preloadimage(index){
+      var img = imgLoad[index];
+      $(new Image())
+      .addClass('preload')
+      .appendTo(body)
+      .on('load', function(){
+        img.el.removeAttr('preloading').attr('loaded', true);
+        index++;
+        if (index < imgLoad.length){
+          preloadimage(index);
+        }
+      })
+      .attr('src', img.src);
+    }
+    preloadimage(0);
+  });
 
   setTimeout(function(){
     body.addClass('ready');
@@ -113,3 +161,4 @@ $(document).ready(function(){
 
   lax.setup();
 });
+
