@@ -26,7 +26,7 @@ include('includes/head.php');
   </div>
 </header>
 
-<article id="accomodations" data-lax-class=".75">
+<article id="accomodations" class="article-right">
   <div class="content">
     <div data-lax-class=".90" class="copy lax-fadein">
       <h2>Accomodations</h2>

@@ -166,20 +166,10 @@
       var lbegin = lx.begin;
       var lend = lx.end;
       var lspread = lx.spread;
-
-      if (i == 0){
-        //console.log(top, lbegin, lend, lspread, (lbegin < top && top < lend));
-        //console.log(top, lbegin, lend, bottom, withinView(lbegin), withinView(lend), lbegin <= top && lend >= bottom);
-      }
-
-      //if (withinView(lbegin) || withinView(lend) || renderAll){
-      //if ((lbegin < top && top < lend) || renderAll === true){
+      
       if (withinView(lbegin) || withinView(lend) || (lbegin <= top && lend >= bottom) || renderAll === true){
-        //var pct = lbegin ? (bottom - lbegin) / lspread : (top / lspread || 0);
         var pct = lbegin ? (top - lbegin) / lspread : (top / lspread || 0);
-        //console.log(top, lspread, top / lspread);
         pct = Math.min(Math.max(pct, 0), 1);
-        //lx.tween.seek(pct);
         lx.seek(pct);
       }
     }
@@ -191,47 +181,22 @@
     i = laxclasses.length;
     while (i--){
       var lx = laxclasses[i];
-      if (!lx.activated && top + lx.height > lx.top){
+      if (!lx.activated && lx.top < bottom){
         lx.el.addClass('lax-active');
         lx.activated = true;
       }
     }
-    
-    /*
-    i = laxrl;
-    while(i--){
-      var lx = laxr[i];
-      lx.el.height(wt + lx.h - lx.top);
-    }
-    
-    i = laxcl;
-    while(i--){
-      var lx = laxc[i];
-      if (wt + lx.h > lx.top) lx.el.addClass('on');
-      else lx.el.removeClass('on');
-    }
-    
-    i = laxgl;
-    var gtop = wt + wh * 6;
-    while(i--){
-      var g = laxg[i];
-      if (g.html && gtop > g.bot){
-        g.el.hide().replaceWith(g.html);
-        g.html = false;
-      }
-    }
-    */
   }
 
   function laxResize(){
     laxheight = laxwin.outerHeight();
     var
-      top = returnTop(),
+      top = laxReturnTop(),
       tweensl = laxtweens.length,
       i
     ;
 
-    laxsettop(0);
+    laxSetTop(0);
 
     // tweens
 
@@ -296,36 +261,36 @@
     i = laxclasses.length;
     while (i--){
       var lx = laxclasses[i];
-      lx.height = lx.pct * laxheight;
-      lx.top = lx.el.eq(0)[0].getBoundingClientRect().top;
+      var tb = lx.el.eq(0)[0].getBoundingClientRect();
+      lx.top = tb.top;
+      lx.height = tb.height;
+      lx.trigger = lx.top - lx.height * lx.pct;
     }
-
-
-    laxsettop(top);
   }
 
-  function laxsettop(top){
-    if (laxiscroll){
-      laxiscroll.scrollTo(0, -top, 0)
-    } else {
-      laxwin.scrollTop(top);
-    }
+  var laxSetTop;
+  function lsetopwin(top){
+    laxwin.scrollTop(top);
+  }
+
+  function lsetopiscroll(top){
+    laxiscroll.scrollTo(0, -top, 0);
   }
   
-  var returnTop;
-  function returnTopWin(){
+  var laxReturnTop;
+  function lrettopwin(){
     return laxwin.scrollTop();
   }
-  function returnTopIscroll(){
+  function lrettopiscroll(){
     return -laxiscroll.y;
   }
 
   function laxSetup(){
     laxwin = $(window);
     laxiscroll = lax.iscroll;
-    returnTop = laxiscroll ? returnTopIscroll : returnTopWin;
-    laxtop = returnTop();
-    // Paralax objects;
+    laxSetTop = laxiscroll ? lsetopiscroll : lsetopwin;
+    laxReturnTop = laxiscroll ? lrettopiscroll : lrettopwin;
+    laxtop = laxReturnTop();
     
     lax.objects = {
       reveal: [],
@@ -345,10 +310,8 @@
       laxAddClassObject(this);
     });
 
-    laxResize();
-
     (lax.iscroll || laxwin).on('scroll', function(){
-      laxtop = returnTop();
+      laxtop = laxReturnTop();
       rAF(laxScroll);
     });
 
@@ -357,77 +320,8 @@
       clearTimeout(laxResizeInt);
       laxResizeInt = setTimeout(laxResize, 20);
     });
-    laxScroll(true);
 
-    /*
-    $('[data-lax-reveal]').each(function(){
-      laxAddRevealObject(this);
-    });
-    
-    $('[data-lax-class]').each(function(){
-      laxAddClassObject(this);
-    });
-    
-    $('[data-lax-gif]').each(function(){
-      laxAddClassObject(this);
-    });
-    
-    calcLax(lax);
-    
-    function paralax(renderAll){
-      renderAll = renderAll || false;
-      
-      var wt = wtop + offsetFromTop;
-      var wb = wbottom - offsetFromBottom;
-      var i;
-      
-      i = laxl;
-      while(i--){
-        var lx = lax[i];
-        
-        if ((lx.beg < wb && lx.end > wt) || renderAll){
-          var pct = lx.beg !== 0 ? (wb - lx.beg) / lx.dist : (wt - lx.beg) / lx.dist;
-          //console.log('pct', wt, lx.beg, lx.dist);
-          pct = Math.min(Math.max(pct, 0), 1);
-          lx.tween.seek(pct);
-        }
-      }
-      
-      i = laxrl;
-      while(i--){
-        var lx = laxr[i];
-        lx.el.height(wt + lx.h - lx.top);
-      }
-      
-      i = laxcl;
-      while(i--){
-        var lx = laxc[i];
-        if (wt + lx.h > lx.top) lx.el.addClass('on');
-        else lx.el.removeClass('on');
-      }
-      
-      i = laxgl;
-      var gtop = wt + wh * 6;
-      while(i--){
-        var g = laxg[i];
-        if (g.html && gtop > g.bot){
-          g.el.hide().replaceWith(g.html);
-          g.html = false;
-        }
-      }
-    }
-    
-    if (rAF){
-      (lax.iscroll || laxwin).on('scroll', function(){
-        rAF(paralax);
-      });
-    } else {
-      (lax.iscroll || laxwin).on('scroll', function(){
-        paralax();
-      });
-    }
-    
-    paralax(true);
-    */
+    laxResize();
+    laxScroll(true);
   }
 })();

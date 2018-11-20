@@ -7,22 +7,6 @@
         <p id="addy">Chinook Tours LLC.<br>
         P.O. Box 111853, Anchorage, Alaska 99511<br>
         7376 Clairborne Circle, Anchorage, Alaska 99502</p>
-        <!--
-        <div id="addy">
-          <ul>
-            <li>
-              <h3>Mailing:</h3>
-              <p>P.O. Box 111853,<br>
-              Anchorage, Alaska 99511</p>
-            </li>
-            <li>
-              <h3>Physical:</h3>
-              <p>P.O. Box 111853,<br>
-              Anchorage, Alaska 99511</p>
-            </li>
-          </ul>
-        </div>
-        -->
       </div>
     </footer>
 
