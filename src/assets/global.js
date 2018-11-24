@@ -54,9 +54,11 @@ if (!_browser.mobile){
 //SmoothScroll({ stepSize: 25 })
 
 var
+  doc = $(document),
   body,
 	win,
   header,
+  nav,
   main,
   draw,
   ww,
@@ -86,10 +88,13 @@ win
 .trigger('resize');
 */
 
-$(document).ready(function(){
+doc.ready(function(){
+  win = $(window);
   body = $('body');
   header = $('header');
   main = $('main');
+  nav = $('nav');
+  var page = body.attr('id');
 
   var iscrl = false;
 
@@ -105,6 +110,15 @@ $(document).ready(function(){
     main.on('touchstart', function(){
       iscrl.refresh();
     });
+  } else {
+    if (page == 'home'){
+      var navheight = nav.children('div').outerHeight();
+      var navlimit = win.outerHeight() - navheight;
+      doc.on('scroll', function(){
+        var nh = Math.min(Math.max(0, doc.scrollTop() - navlimit), navheight);
+        nav.height(nh);
+      });
+    }
   }
 
   $('.bgs').each(function(){

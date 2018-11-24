@@ -1,3 +1,5 @@
+    
+  
     <footer>
       <div class="content">
         <div id="felix">
@@ -11,14 +13,15 @@
     </footer>
 
   </div></main>
-  <nav>
+
+  <nav><div><div>
+    <a href="index.php"><img src="assets/images/nav-ct.svg" width="320" alt="Chinook Tours Alaska"></a>
     <ul>
-      <li><a href="#accomodations"><span>Accomodations</span></a></li>
-      <li><a href="#fishing"><span>Fishing</span></a></li>
-      <li><a href="#transportation"><span>Transportation</span></a></li>
-      <li><a href="#flights"><span>Flights</span></a></li>
-      <li><a href="#about-me"><span>About Me</span></a></li>
+      <li><a href="accomodations.php"><span>Accomodations</span></a></li>
+      <li><a href="transportation.php"><span>Transportation</span></a></li>
+      <li><a href="fishing.php"><span>Fishing</span></a></li>
+      <li><a href="alaska-cruises.php"><span>Alaska Cruises</span></a></li>
     </ul>
-  </nav>
+  </div></div></nav>
 </body>
 </html>

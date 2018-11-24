@@ -81,7 +81,7 @@
       to.ease = from.ease = Linear.easeNone;
     }
 
-    let container = that.closest('[lax-container]');
+    let container = that.closest('[data-lax-container]');
 
     let delay = parseFloat(that.attr('data-lax-delay'));
     var obj = {

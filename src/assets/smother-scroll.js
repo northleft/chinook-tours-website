@@ -115,8 +115,9 @@
     let PAGE_HEIGHT = 800;
     
     function normalizeWheel(/*object*/ event) /*object*/ {
-      let sX = 0, sY = 0,       // spinX, spinY
-      pX = 0, pY = 0;       // pixelX, pixelY
+      let
+        sX = 0, sY = 0, // spinX, spinY
+        pX = 0, pY = 0; // pixelX, pixelY
       
       // Legacy
       if ('detail'      in event) { sY = event.detail; }
@@ -149,6 +150,8 @@
       // Fall-back if spin cannot be determined
       if (pX && !sX) { sX = (pX < 1) ? -1 : 1; }
       if (pY && !sY) { sY = (pY < 1) ? -1 : 1; }
+
+      let wheel = (sY % 1 === 0) && !(pY % 1 === 0)
       
       return {
         spinX  : sX,
@@ -156,7 +159,9 @@
         pixelX : pX,
         pixelY : pY,
         directionY: (sY / Math.abs(sY)) || 0,
-        directionX: (sX / Math.abs(sX)) || 0
+        directionX: (sX / Math.abs(sX)) || 0,
+        wheel: wheel,
+        pad: !wheel
       };
     }
     
@@ -173,22 +178,23 @@
         e = e.originalEvent;
       }
       var delta = normalizeWheel(e);
-
       var pixelY = Math.abs(delta.pixelY);
-      var spinY = Math.abs(delta.spinY);
-      
       var top = Math.min(pixelY, PAGE_HEIGHT) * delta.directionY;
+      var time = isInt(delta.spinY) ? .5 : .05;
+
+      if (delta.wheel){
+        top *= 1.2;
+        time *= 1.2;
+      }
 
       top = Math.max(_win.scrollTop() + top, 0);
       
       if (_ttwn){
         _ttwn.kill();
       }
-      
-      var time = isInt(spinY) ? .5 : .05;
-      
       _ttwn = TweenLite.to(window, time, {
-        scrollTo: top
+        scrollTo: top,
+        ease: Power4.easeOut
       });
       
       if (e.preventDefault) e.preventDefault();

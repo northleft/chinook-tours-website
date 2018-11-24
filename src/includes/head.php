@@ -16,8 +16,8 @@
   <!--REMOVE WHEN LIVE!!!-->
   <meta name="robots" content="noindex, nofollow">
 
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!--<link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">-->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 	<script src="assets/TweenLite.min.js"></script>
 	<script src="assets/CSSPlugin.min.js"></script>
