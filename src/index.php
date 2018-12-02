@@ -1,12 +1,11 @@
 <?php
 
 $title = 'Chinook Tours Alaska';
-$body = 'home';
+$body_id = 'home';
 
 include('includes/head.php');
 
 ?>
-
 
 <header id="top" data-lax-container>
   <div class="bgs" data-lax="scale:1.1,y:300">
@@ -47,7 +46,7 @@ include('includes/head.php');
   <div data-bg="0" data-lax="y:-150"></div>
   <div class="content">
     <div data-lax-class=".90" class="copy lax-fadein">
-      <h2>Transportation</h2>
+      <h2>Alaska&rsquo;s Wilderness</h2>
       <p>We will make arrangements for the Alaska State and the BC Ferry, Alaska Railroad, White Pass-Yukon Rail/Bus, Motorhome, Camper and Car rentals all the way to reserving a canoe.</p>
       <a class="btn" href="transportation.php"><strong>Learn More</strong></a>
     </div>
@@ -82,7 +81,6 @@ include('includes/head.php');
       <a class="btn" href="cruises.php"><strong>Learn More</strong></a>
       <p>&nbsp;</p>
     </div>
-    <div>
       
     <div class="thumbs">
       <img data-lax-class=".80" class="lax-fadein" src="assets/images/home-cruises-0.jpg" width="300">

@@ -30,5 +30,5 @@
 	<link rel="stylesheet" href="assets/global.css">
 	<script src="assets/global.js"></script>
 </head>
-<body id="<?php echo $body; ?>">
+<body id="<?php echo $body_id; ?>">
   <main><div>

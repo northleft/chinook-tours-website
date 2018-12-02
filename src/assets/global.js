@@ -111,14 +111,14 @@ doc.ready(function(){
       iscrl.refresh();
     });
   } else {
-    if (page == 'home'){
-      var navheight = nav.children('div').outerHeight();
-      var navlimit = win.outerHeight() - navheight;
-      doc.on('scroll', function(){
-        var nh = Math.min(Math.max(0, doc.scrollTop() - navlimit), navheight);
-        nav.height(nh);
-      });
-    }
+    doc.on('scroll', function(){
+      var top = doc.scrollTop();
+      if (top > 300){
+        nav.addClass('nav-show');
+      } else {
+        nav.removeClass('nav-show');
+      }
+    });
   }
 
   $('.bgs').each(function(){
