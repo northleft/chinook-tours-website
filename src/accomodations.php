@@ -3,7 +3,10 @@
 $title = 'Chinook Tours Alaska';
 $body_id = 'accomodations';
 
+//include('includes/content.php');
 include('includes/head.php');
+
+/*<?php writeContent($body_id); ?>*/
 
 ?>
 
@@ -19,7 +22,7 @@ include('includes/head.php');
 
 <section><div>
   <h1>Accomodations</h1>
-
+  
   <div id="read-more">
     <div>
       <h3>Camp Denali and North Face Lodge</h3>
@@ -29,74 +32,57 @@ include('includes/head.php');
         <p>Naturalist-guided outings, fine dining, direct views of the Alaska Range, and extended stays all contribute to enhance your enjoyment, understanding and memories of this magnificent land: its wildlife, rhythms, sights and sensations.</p>
       </div>
     </div>
-
+    
     <div>
       <h3>Silver Salmon Creek Lodge</h3>
       <div>
         <p>At Silver Salmon Creek Lodge the landscape, wildlife and outdoor opportunities combine to offer visitors a true sense of Alaskan wilderness, with towering volcanic mountains forming an immediate backdrop to the tidal marshes, streams and pristine salt-water bays which comprise the coastline.</p>
         <p>A premier vacation destination for fishing, bear viewing, and wildlife photography Silver Salmon Creek Lodge is in its 24th year under the same management. Recently we have also added a guided sea kayaking program and gourmet cuisine for our full service guests.</p>
-        <p>We are located in Alaska&rsquo;s Lake Clark National Park, on the western shores of Cook Inlet.  We are a fly-in, full-service facility specializing in 1-7 day  sport fishing, bear viewing and photography excursions, with a 16 person capacity.</p>
+        <p>We are located in Alaska’s Lake Clark National Park, on the western shores of Cook Inlet. We are a fly-in, full-service facility specializing in 1-7 day sport fishing, bear viewing and photography excursions, with a 16 person capacity.</p>
       </div>
     </div>
     
     <div>
       <h3>Katmai Wilderness Lodge</h3>
       <div>
-        <p>Katmai Wilderness Lodge is not a &ldquo;bunkhouse&rdquo; or a &ldquo;tent camp&rdquo; style facility. It is the only true lodge having modern and private bathrooms in every guest room, and providing truly gourmet meals on the wild coast of Alaska&rsquo;s Katmai National Park. The lodge features high quality and personalized guided bear viewing and sports fishing experiences (without the crowds) on the coast of the 3.6 million acre Alaska&rsquo;s Katmai National Park. Kukak Bay, where the lodge is located, is well known and highly regarded by far-ranging commercial fishermen and other adventurous Alaskans for its concentration of bears and salmon on which they feed.</p>
+        <p>Katmai Wilderness Lodge is not a “bunkhouse” or a “tent camp” style facility. It is the only true lodge having modern and private bathrooms in every guest room, and providing truly gourmet meals on the wild coast of Alaska’s Katmai National Park. The lodge features high quality and personalized guided bear viewing and sports fishing experiences (without the crowds) on the coast of the 3.6 million acre Alaska’s Katmai National Park. Kukak Bay, where the lodge is located, is well known and highly regarded by far-ranging commercial fishermen and other adventurous Alaskans for its concentration of bears and salmon on which they feed.</p>
       </div>
     </div>
-
+    
     <div>
-      <h3>Alaska Charters</h3>
-      <div>
-        <p>If you want to experience Alaska up close and personal&hellip; Gigantic icebergs tumbling into the sea&hellip; Eagles over head&hellip; Bears catching salmon&hellip; Untouched rain forests&hellip; Then, Alaska Charters and Adventures can provide your unsurpassed wilderness experience.</p>
-        <p>When you are a guest of Alaska Charters and Adventures, you are special, not a number in a crowd. We will know what your specific interests, limitations and experiential goals are for each excursion even before you arrive. Because our boats travel with 6 or fewer clients (unless your group is larger) we are better able to cater to your objectives and timeframes. Alaska Charters and Adventures carefully tailors every excursion to your personal schedule, interests, and with hopes of exceeding your expectations in every way.</p>
-      </div>
-    </div>
-
-    <div>
-      <h3>Devil&rdquo;s Mountain Lodge</h3>
+      <h3>Devil’s Mountain Lodge</h3>
       <div>
         <p>We are blessed to be able to live in one of the most beautiful places on Earth, here in the midst of the Wrangell St Elias National Park and Preserve.</p>
         <p>As life-long Alaskans, we have experienced the kind of life not many folks are privileged to. Although it has not been an easy life, the hardships have been far outweighed by the incredible wonders and freedoms of living in Nabesna, Alaska.</p>
-        <p>We would be honored to share our home with you. Please explore our web-site to get to know us better. Don&rsquo;t hesitate to contact us with any questions you might have.</p>
+        <p>We would be honored to share our home with you. Please explore our web-site to get to know us better. Don’t hesitate to contact us with any questions you might have.</p>
       </div>
     </div>
-
+    
     <div>
       <h3>Kennicott Glacier Lodge</h3>
       <div>
-        <p>Imagine yourself in America&rsquo;s largest National Park, overlooking miles of glaciers and 14 of the highest mountain peaks on the continent! You could be there, at Kennicott Glacier Lodge, a premier Alaskan wilderness lodge in the heart of Wrangell-St. Elias National Park.</p>
+        <p>Imagine yourself in America’s largest National Park, overlooking miles of glaciers and 14 of the highest mountain peaks on the continent! You could be there, at Kennicott Glacier Lodge, a premier Alaskan wilderness lodge in the heart of Wrangell-St. Elias National Park.</p>
         <p>Enjoy gracious hospitality, spectacular views, glacier hiking, flightseeing, and rafting. This will be your best Alaskan wilderness vacation!</p>
       </div>
     </div>
-
+    
     <div>
       <h3>Kodiak Adventures Lodge</h3>
       <div>
         <p>Kodiak Island is considered one of the premier destinations for those who love the outdoors. Kodiak Adventures Lodge is a great Alaska sport fishing lodge. Whether you want to do some Alaska king salmon fishing, experience some of the finest halibut fishing in Kodiak, or are looking for a unique hunting opportunity, Kodiak Adventures has it all. Book a trip with us and sample everything that Kodiak Island has to offer at our Alaska remote fly in lodge.</p>
       </div>
     </div>
-
+    
     <div>
       <h3>Caribou Lodge</h3>
       <div>
-        <p>Caribou Lodge is located on a remote lake above timberline in the Talkeetna Mountains just southeast of Denali National Park and is closer to Mt. McKinley than the park headquarters or entrance. Nature and tranquility are our only neighbors. The location is our home year around and a private paradise in the Alaskan wilderness or &ldquo;The Bush,&rdquo; as it is known to Alaskans. The lodge offers fantastic views of Mt. McKinley and the Alaskan Range to the west and to the east overlooking the lake, stands the beautiful Talkeetna Mountains. Wildlife is generaly good in the area. Caribou, moose, grizzly bears, sheep, black bears, wolves, coyotes, fox, wolverine, ermine, otters, eagles, short-eared owls, ptarmigan, ducks, loons, Canadian geese, and swans have all been observed from the comfort of the lodge and the cabins. Wildflowers abound mid July through August. The many berries come ripe in July. The long days of summer bring awesome sunrises and the tranquility of the Midnight Sun as it slips behind Denali is a sight to behold.</p>
+        <p>Caribou Lodge is located on a remote lake above timberline in the Talkeetna Mountains just southeast of Denali National Park and is closer to Mt. McKinley than the park headquarters or entrance. Nature and tranquility are our only neighbors. The location is our home year around and a private paradise in the Alaskan wilderness or “The Bush,” as it is known to Alaskans. The lodge offers fantastic views of Mt. McKinley and the Alaskan Range to the west and to the east overlooking the lake, stands the beautiful Talkeetna Mountains. Wildlife is generaly good in the area. Caribou, moose, grizzly bears, sheep, black bears, wolves, coyotes fox, wolverine, ermine, otters, eagles, short-eared owls, ptarmigan, ducks, loons, Canadian geese, and swans have all been observed from the comfort of the lodge and the cabins. Wildflowers abound mid July through August. The many berries come ripe in July. The long days of summer bring awesome sunrises and the tranquility of the Midnight Sun as it slips behind Denali is a sight to behold.</p>
       </div>
     </div>
 
   </div>
+    
   
 </div></section>
 
 <?php include('includes/foot.php'); ?>
-
-<!--
-<h1>Exploring Alaska&rsquo;s Wilderness</h1>
-<h3>Alaska Waters</h3>
-
-<p>Alaska Waters, Inc offers 4 different jet boat tours, from AnAn Bear &amp; Wildlife Observatory, to Glacier Excursions and trips up the Stikine River. There will always be something exiting to see &amp; do and it will come with information about the rich Tlingit history &amp; culture, that is still very much alive.The Tongass National Rain Forest, the coast and the river system provide excellent habitat for bears, whales, fish and many species of birds.</p>
-<p>For the AnAn Bear excursion, there are limited permits available, so please make your reservations in advance.</p>
-
-<div></div>
--->

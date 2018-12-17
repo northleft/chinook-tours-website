@@ -1,8 +1,8 @@
 <?php
 
-$template = trim(file_get_contents('content.template'));
+$template = trim(file_get_contents(dirname(__FILE__).'/content.template'));
 
-$raw_content = trim(file_get_contents('content.json'));
+$raw_content = trim(file_get_contents(dirname(__FILE__).'/content.json'));
 $raw_content = preg_replace('/\r|\n/', '', $raw_content);
 $raw_content = preg_replace('/\s+/', ' ', $raw_content);
 
@@ -11,7 +11,7 @@ $objarray = json_decode($raw_content);
 function writeContent($tag){
   global $objarray;
   global $template;
-
+  
   foreach($objarray as &$entry) {
     if (strpos($entry->tags, $tag) > -1){
       $str = $template;
@@ -21,8 +21,5 @@ function writeContent($tag){
     }
   }
 }
-
-writeContent('wildlife');
-
 
 ?>

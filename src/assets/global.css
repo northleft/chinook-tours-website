@@ -148,8 +148,8 @@ li{
 h1,
 h2,
 h3{
-  font-family: 'Open Sans', sans-serif;
-  /*font-family: 'Playfair Display', serif;*/
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
   line-height: normal;
 }
@@ -267,6 +267,11 @@ nav > div > div,
   height: 100%;
 }
 
+footer .content{
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
 nav{
   background: #003459;
   display: block;
@@ -334,13 +339,18 @@ section > div div:empty{
   float: left;
 }
 .btn{
-  background: #fff;
-  color: #003459;
+  color: #fff;
+  background: #003459;
   border-radius: 10px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
 }
 .btn span,
 .btn strong{
   padding: 12px 20px;
+}
+.btn strong{
+  font-weight: 600;
 }
 
 article img{
@@ -518,6 +528,53 @@ header .bgs{
 }
 
 
+
+#accomodations header [data-bg="0"]{
+  background-image: url(images/accomodations-0-1200.jpg);
+}
+#accomodations header [data-bg="1"]{
+  background-image: url(images/accomodations-1-1200.jpg);
+}
+#accomodations header [data-bg="2"]{
+  background-image: url(images/accomodations-2-1200.jpg);
+}
+#accomodations header [data-bg="3"]{
+  background-image: url(images/accomodations-3-1200.jpg);
+}
+#accomodations header [data-bg="4"]{
+  background-image: url(images/accomodations-4-1200.jpg);
+}
+#accomodations header [data-bg="5"]{
+  background-image: url(images/accomodations-5-1200.jpg);
+}
+#accomodations header [data-bg="6"]{
+  background-image: url(images/accomodations-6-1200.jpg);
+}
+@media only screen and (min-width : 1200px){
+  #accomodations header [data-bg="0"]{
+    background-image: url(images/accomodations-0-2000.jpg);
+  }
+  #accomodations header [data-bg="1"]{
+    background-image: url(images/accomodations-1-2000.jpg);
+  }
+  #accomodations header [data-bg="2"]{
+    background-image: url(images/accomodations-2-2000.jpg);
+  }
+  #accomodations header [data-bg="3"]{
+    background-image: url(images/accomodations-3-2000.jpg);
+  }
+  #accomodations header [data-bg="4"]{
+    background-image: url(images/accomodations-4-2000.jpg);
+  }
+  #accomodations header [data-bg="5"]{
+    background-image: url(images/accomodations-5-2000.jpg);
+  }
+  #accomodations header [data-bg="6"]{
+    background-image: url(images/accomodations-6-2000.jpg);
+  }
+}
+
+
 /*
 nav{
   display: block;
@@ -559,7 +616,7 @@ nav li{
 }
 */
 #home #transportation h2,
-#home #home #transportation p{
+#home #transportation p{
   color: #fff;
 }
 #home #transportation [data-bg="0"]{
@@ -615,8 +672,5 @@ nav li{
 
 #read-more > div div{
   max-width: 600px;
-  /*margin: 0px 0px 20px;
-  padding: 0px 0px 0px 10px;
-  border-left: 1px rgb(185, 214, 226) solid;*/
 }
 

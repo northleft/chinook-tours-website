@@ -18,7 +18,7 @@
 
   <!--<link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">-->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700" rel="stylesheet">
 	<script src="assets/TweenLite.min.js"></script>
 	<script src="assets/CSSPlugin.min.js"></script>
   <script src="assets/ScrollToPlugin.min.js"></script>
