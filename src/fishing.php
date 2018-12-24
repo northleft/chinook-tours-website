@@ -2,6 +2,7 @@
 
 $title = 'Chinook Tours Alaska';
 $body_id = 'fishing';
+$path = '';
 
 /*
 include('includes/content.php');

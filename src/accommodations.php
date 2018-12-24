@@ -1,7 +1,8 @@
 <?php
 
 $title = 'Chinook Tours Alaska';
-$body_id = 'accomodations';
+$body_id = 'accommodations';
+$path = '';
 
 //include('includes/content.php');
 include('includes/head.php');
@@ -21,7 +22,7 @@ include('includes/head.php');
 </header>
 
 <section><div>
-  <h1>Accomodations</h1>
+  <h1>Accommodations</h1>
   
   <div id="read-more">
     <div>

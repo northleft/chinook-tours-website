@@ -17,7 +17,8 @@
   <nav><div><div>
     <a href="index.php"><img src="assets/images/nav-ct.svg" width="320" alt="Chinook Tours Alaska"></a>
     <ul>
-      <li><a href="accomodations.php"><span>Accomodations</span></a></li>
+      <li><a href="index.php"><span>Home</span></a></li>
+      <li><a href="accommodations.php"><span>Accommodations</span></a></li>
       <li><a href="fishing.php"><span>Fishing</span></a></li>
       <li><a href="cruises.php"><span>Alaska Cruises</span></a></li>
     </ul>

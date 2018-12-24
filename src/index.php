@@ -2,6 +2,7 @@
 
 $title = 'Chinook Tours Alaska';
 $body_id = 'home';
+$path = '';
 
 include('includes/head.php');
 
@@ -22,21 +23,23 @@ include('includes/head.php');
       <h1>Find your <br><em>Alaskan</em> adventure</h1>
       <p><span>Come and see why Chinook Tours offers a unique Alaskan experience.</span></p>
     </div>
+    <div>
+    </div>
   </div>
 </header>
 
-<article id="accomodations" class="article-right">
+<article id="accommodations" class="article-right">
   <div class="content">
     <div data-lax-class=".90" class="copy lax-fadein">
-      <h2>Accomodations</h2>
+      <h2>Accommodations</h2>
       <p>We will do our best to find the best accommodations for your taste and budget. There are many nice little Bed and Breakfasts, remote Lodges with great outdoor adventures right out the doorstep, or comfortable hotels in the &ldquo;big&rdquo; cities.</p>
-      <a class="btn" href="accomodations.php"><strong>Learn More</strong></a>
+      <a class="btn" href="accommodations.php"><strong>Learn More</strong></a>
       <p>&nbsp;</p>
     </div>
     <div class="thumbs">
-      <img data-lax-class=".80" class="lax-fadein" src="assets/images/home-accomodations-0.jpg" width="300">
-      <img data-lax-class=".80" class="lax-fadein" src="assets/images/home-accomodations-1.jpg" width="300">
-      <img data-lax-class=".80" class="lax-fadein" src="assets/images/home-accomodations-2.jpg" width="300">
+      <img data-lax-class=".80" class="lax-fadein" src="assets/images/home-accommodations-0.jpg" width="300">
+      <img data-lax-class=".80" class="lax-fadein" src="assets/images/home-accommodations-1.jpg" width="300">
+      <img data-lax-class=".80" class="lax-fadein" src="assets/images/home-accommodations-2.jpg" width="300">
     </div>
     <br>
   </div>

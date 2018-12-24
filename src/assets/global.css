@@ -309,14 +309,21 @@ nav > div > div{
   height: 100%;
 }
 nav ul,
-nav li{
+nav li,
+nav li a,
+nav li span{
   display: block;
   position: relative;
   float: left;
   clear: none;
+  list-style: none;
 }
 nav ul{
   float: right;
+  margin: 0px -10px 0px 0px;
+}
+nav li span{
+  padding: 10px;
 }
 
 section > div{
@@ -529,48 +536,48 @@ header .bgs{
 
 
 
-#accomodations header [data-bg="0"]{
-  background-image: url(images/accomodations-0-1200.jpg);
+#accommodations header [data-bg="0"]{
+  background-image: url(images/accommodations-0-1200.jpg);
 }
-#accomodations header [data-bg="1"]{
-  background-image: url(images/accomodations-1-1200.jpg);
+#accommodations header [data-bg="1"]{
+  background-image: url(images/accommodations-1-1200.jpg);
 }
-#accomodations header [data-bg="2"]{
-  background-image: url(images/accomodations-2-1200.jpg);
+#accommodations header [data-bg="2"]{
+  background-image: url(images/accommodations-2-1200.jpg);
 }
-#accomodations header [data-bg="3"]{
-  background-image: url(images/accomodations-3-1200.jpg);
+#accommodations header [data-bg="3"]{
+  background-image: url(images/accommodations-3-1200.jpg);
 }
-#accomodations header [data-bg="4"]{
-  background-image: url(images/accomodations-4-1200.jpg);
+#accommodations header [data-bg="4"]{
+  background-image: url(images/accommodations-4-1200.jpg);
 }
-#accomodations header [data-bg="5"]{
-  background-image: url(images/accomodations-5-1200.jpg);
+#accommodations header [data-bg="5"]{
+  background-image: url(images/accommodations-5-1200.jpg);
 }
-#accomodations header [data-bg="6"]{
-  background-image: url(images/accomodations-6-1200.jpg);
+#accommodations header [data-bg="6"]{
+  background-image: url(images/accommodations-6-1200.jpg);
 }
 @media only screen and (min-width : 1200px){
-  #accomodations header [data-bg="0"]{
-    background-image: url(images/accomodations-0-2000.jpg);
+  #accommodations header [data-bg="0"]{
+    background-image: url(images/accommodations-0-2000.jpg);
   }
-  #accomodations header [data-bg="1"]{
-    background-image: url(images/accomodations-1-2000.jpg);
+  #accommodations header [data-bg="1"]{
+    background-image: url(images/accommodations-1-2000.jpg);
   }
-  #accomodations header [data-bg="2"]{
-    background-image: url(images/accomodations-2-2000.jpg);
+  #accommodations header [data-bg="2"]{
+    background-image: url(images/accommodations-2-2000.jpg);
   }
-  #accomodations header [data-bg="3"]{
-    background-image: url(images/accomodations-3-2000.jpg);
+  #accommodations header [data-bg="3"]{
+    background-image: url(images/accommodations-3-2000.jpg);
   }
-  #accomodations header [data-bg="4"]{
-    background-image: url(images/accomodations-4-2000.jpg);
+  #accommodations header [data-bg="4"]{
+    background-image: url(images/accommodations-4-2000.jpg);
   }
-  #accomodations header [data-bg="5"]{
-    background-image: url(images/accomodations-5-2000.jpg);
+  #accommodations header [data-bg="5"]{
+    background-image: url(images/accommodations-5-2000.jpg);
   }
-  #accomodations header [data-bg="6"]{
-    background-image: url(images/accomodations-6-2000.jpg);
+  #accommodations header [data-bg="6"]{
+    background-image: url(images/accommodations-6-2000.jpg);
   }
 }
 
