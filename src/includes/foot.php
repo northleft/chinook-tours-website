@@ -1,27 +1,46 @@
     
-  
     <footer>
       <div class="content">
-        <div id="felix">
-          <img src="assets/images/footer-felix.jpg" alt="Felix Schneider" width="50" height="50">
-          <p>Hello! My name is Felix Schneider and I love Alaska. I also love creating personalized adventures for others to get to know Alaska on their own terms.</p>
-        </div>
-        <p id="addy">Chinook Tours LLC.<br>
-        P.O. Box 111853, Anchorage, Alaska 99511<br>
-        7376 Clairborne Circle, Anchorage, Alaska 99502</p>
+        <?php if ($lang=='en'){ ?>
+          <div id="felix">
+            <img src="assets/images/footer-felix.jpg" alt="Felix Schneider" width="50" height="50">
+            <p>Hello! My name is Felix Schneider and I love Alaska. I also love creating personalized adventures for others to get to know Alaska on their own terms.</p>
+          </div>
+          <p id="addy">Chinook Tours LLC.<br>
+          P.O. Box 111853, Anchorage, Alaska 99511<br>
+          7376 Clairborne Circle, Anchorage, Alaska 99502</p>
+        <?php } else { ?>
+          <div id="felix">
+            <img src="assets/images/footer-felix.jpg" alt="Felix Schneider" width="50" height="50">
+            <p>Hello! My name is Felix Schneider and I love Alaska. I also love creating personalized adventures for others to get to know Alaska on their own terms.</p>
+          </div>
+          <p id="addy">Chinook Tours LLC.<br>
+          P.O. Box 111853, Anchorage, Alaska 99511<br>
+          7376 Clairborne Circle, Anchorage, Alaska 99502</p>
+        <?php } ?>
       </div>
     </footer>
 
   </div></main>
 
   <nav><div><div>
-    <a href="index.php"><img src="assets/images/nav-ct.svg" width="320" alt="Chinook Tours Alaska"></a>
-    <ul>
-      <li><a href="index.php"><span>Home</span></a></li>
-      <li><a href="accommodations.php"><span>Accommodations</span></a></li>
-      <li><a href="fishing.php"><span>Fishing</span></a></li>
-      <li><a href="cruises.php"><span>Alaska Cruises</span></a></li>
-    </ul>
+    <?php if ($lang=='en'){ ?>
+      <a href="index.php"><img src="assets/images/nav-ct.svg" width="320" alt="Chinook Tours Alaska"></a>
+      <ul>
+        <li><a href="index.php"><span>Home</span></a></li>
+        <li><a href="accommodations.php"><span>Accommodations</span></a></li>
+        <li><a href="fishing.php"><span>Fishing</span></a></li>
+        <li><a href="cruises.php"><span>Alaska Cruises</span></a></li>
+      </ul>
+    <?php } else { ?>
+      <a href="index.php?de"><img src="assets/images/nav-ct.svg" width="320" alt="Chinook Tours Alaska"></a>
+      <ul>
+        <li><a href="index.php?de"><span>Home</span></a></li>
+        <li><a href="accommodations.php?de"><span>Accommodations</span></a></li>
+        <li><a href="fishing.php?de"><span>Fishing</span></a></li>
+        <li><a href="cruises.php?de"><span>Alaska Cruises</span></a></li>
+      </ul>
+    <?php } ?>
   </div></div></nav>
 </body>
 </html>

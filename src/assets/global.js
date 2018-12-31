@@ -127,8 +127,10 @@ doc.ready(function(){
     var imgLoad = [];
     var bg = $(this);
     var bgs = bg.find('[data-bg]');
+    var parent = bg.parent();
+    var ind = $('<span class="bgs-ind" data-lax="y:40,opacity:0"></span>').appendTo(parent);
     
-    bgs.each(function(){
+    bgs.each(function(i){
       var b = $(this).attr('preloading', true);
       var src = b.css('background-image');
       
@@ -136,11 +138,18 @@ doc.ready(function(){
       
       imgLoad.push({
         el: b,
-        src: src
+        src: src,
+        span: $('<span data-bg-ind="' + i + '"></span>').appendTo(ind)
       });
     });
 
+    console.log(imgLoad);
+
+    var slideShoeInt;
+
     function slideshow(index){
+      clearTimeout(slideShoeInt);
+
       var loaded = bgs.eq(index).attr('loaded') !== null;
 
       if (loaded){
@@ -148,7 +157,7 @@ doc.ready(function(){
         index = (index + 1) % bgs.length;
       }
 
-      setTimeout(function(){
+      slideShoeInt = setTimeout(function(){
         slideshow(index);
       }, loaded ? 8000 : 1000);
     }
@@ -161,6 +170,9 @@ doc.ready(function(){
       .appendTo(body)
       .on('load', function(){
         img.el.removeAttr('preloading').attr('loaded', true);
+        img.span.addClass('bgs-ind-loaded').on('click', function(){
+          slideshow(img.span.index());
+        })
         index++;
         if (index < imgLoad.length){
           preloadimage(index);

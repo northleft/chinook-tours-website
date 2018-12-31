@@ -1,3 +1,10 @@
+<?php
+$lang = 'en';
+if (isset($_GET['de'])){
+  $lang = 'de';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -30,5 +37,5 @@
 	<link rel="stylesheet" href="<?php echo $path; ?>assets/global.css">
 	<script src="<?php echo $path; ?>assets/global.js"></script>
 </head>
-<body id="<?php echo $body_id; ?>">
+<body id="<?php echo $body_id; ?>" data-language="">
   <main><div>

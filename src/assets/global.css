@@ -377,6 +377,10 @@ article .content{
   width: 100%;
   max-width: 60%;
 }
+
+.copy.copy-wide{
+  max-width: 80%;
+}
 .thumbs,
 .thumbs img{
   display: block;
@@ -467,6 +471,51 @@ header img{
 .bgs[data-show="4"] [data-bg="4"],
 .bgs[data-show="5"] [data-bg="5"]{
   opacity: 1;
+}
+.bgs-ind{
+  display: block;
+  position: absolute;
+  float: none;
+  bottom: 10px;
+  left: 50%;
+  height: 25px;
+  transform: translate(-50%,0px);
+}
+.bgs-ind span{
+  background: rgba(255, 255, 255, .8);
+  display: block;
+  position: relative;
+  float: left;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: 10px;
+  opacity: .3;
+  pointer-events: none;
+}
+.bgs-ind span:after{
+  content: '';
+  display: block;
+  position: absolute;
+  float: none;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50%;
+  pointer-events: auto;
+}
+.bgs-ind span.bgs-ind-loaded{
+  opacity: 1;
+  cursor: pointer;
+}
+.bgs[data-show="0"] ~ .bgs-ind [data-bg-ind="0"]:after,
+.bgs[data-show="1"] ~ .bgs-ind [data-bg-ind="1"]:after,
+.bgs[data-show="2"] ~ .bgs-ind [data-bg-ind="2"]:after,
+.bgs[data-show="3"] ~ .bgs-ind [data-bg-ind="3"]:after,
+.bgs[data-show="4"] ~ .bgs-ind [data-bg-ind="4"]:after,
+.bgs[data-show="5"] ~ .bgs-ind [data-bg-ind="5"]:after{
+  border: 1px rgba(255, 255, 255, .8) solid;
 }
 
 header .content > div{
