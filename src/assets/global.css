@@ -565,7 +565,9 @@ header .content > div{
   float: none;
   bottom: 10%;
   left: 20px;
-  max-width: calc(100% - 40px);
+  right: 20px;
+  /*max-width: calc(100% - 40px);
+  width: 100%;*/
 }
 
 header .content > div,
@@ -771,3 +773,33 @@ nav li{
   max-width: 600px;
 }
 
+#top h2{
+  display: block;
+  position: absolute;
+  float: none;
+  top: 50%;
+  right: 0px;
+  width: 260px;
+  transform: translate(0px, -50%);
+  text-align: right;
+  font-size: 32px;
+  padding: 0px;
+}
+#top h2 a,
+#top h2 span{
+  display: block;
+  position: relative;
+  float: right;
+}
+#top h2 a{
+  padding: 0px 40px 0px 0px;
+}
+#top h2 strong{
+  display: block;
+  position: absolute;
+  float: none;
+  top: 50%;
+  right: 0px;
+  transform: translate(0px, -50%);
+  font-size: 68px;
+}

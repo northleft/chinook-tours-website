@@ -22,8 +22,11 @@ include('includes/head.php');
     <div>
       <h1>Find your <br><em>Alaskan</em> adventure</h1>
       <p><span>Come and see why Chinook Tours offers a unique Alaskan experience.</span></p>
-    </div>
-    <div>
+      <h2><a href="index.php?de">
+        <span>Sprechen Sie</span>
+        <span>Deutsch</span>
+        <strong>?</strong>
+      </a></h2>
     </div>
   </div>
 </header>
@@ -31,17 +34,21 @@ include('includes/head.php');
 <article id="about">
   <div class="content">
     <div data-lax="y:-100" class="copy copy-fullwidth">
+
       <?php if ($lang=='en'){ ?>
-        <h2 class="text-center">Why Chinook Tours</h2>
+
+        <h2 class="text-center">Why Chinook Tours LLC</h2>
         <p>My name is Felix Schneider and I founded & own Chinook Tours since 1994. Anchorage Alaska is my home since May 1994 and before that I organized trips from Switzerland to America (North- Central & South) from 1983 1993 My first trip to North America was in 1980 and my first visit to Alaska in 1986, so I know a lot of places first hand. I traveled by car, canoe, boat, train, plane and hiked, slept in fine lodges, on the deck of the ferry, B&B’s, hotel’s and also in tents, so I think I have a pretty good knowledge what’s available were and how to get there.</p>
         <p>I’m not interested in mass tourism and try to find places that still have a ‘Last Frontier’ flair. Of course places like Denali or Kenai Fjords National Park attract a lot of visitors in the summer month, but even there, you can find places more secluded. I will try and find the adventure of your dreams and would be happy to plan & book your trip for you.</p>
 
       <?php } else { ?>
-        <h2 class="text-center">Warum Sie bei Chinook Toors LLC genau richtig sind</h2>
+
+        <h2 class="text-center">Warum Sie bei Chinook Toors LLC genau richtig&nbsp;sind</h2>
         <p>Ich heisse Felix Schneider und bin der Gründer und Besitzer von Chinook Tours. Anchorage in Alaska ist seit 1994 meine zweite Heimat, doch Reisen von der Schweiz nach Amerika (Nord-, Mittel- und Südamerika) organisiere ich bereits seit 1983. Alaska beeindruckt und fesselt mich seit meiner ersten Reise im Jahre 1986. Mit dem Auto, Kanu, Schiff, Flugzeug und zu Fuss erkundete ich unzählige Plätze dieser weltbekannten und sagenumworbenen Region und schlief dabei sowohl in Luxus-Lodges, in B&Bs, in Hotels wie auch auf dem Deck der Fähren und im Zelt. Deshalb kenne ich viele Orte hier in Alaska wie meine Westentasche und ich weiss oft aus eigener Erfahrung, wie man diese aussergewöhnlichen Orte am besten erreichen kann.</p>
         <p>Ich interessiere mich nicht für Massentourismus und bin stets auf der Suche nach unberührten Orten und Landschaften, die sich abseits der grossen Touristenströme befinden. Auch in Nationalparks wie Danali oder Kenai Fjord lassen sich noch entlegene, unversehrte Flecken finden. Gerne helfe ich Ihnen, Ihren persönlichen Alaska-Reisetraum zu verwirklichen“</p>
 
       <?php } ?>
+
       <p>&nbsp;</p>
     </div>
   </div>
@@ -50,17 +57,23 @@ include('includes/head.php');
 <article id="accommodations">
   <div class="content content-right">
     <div data-lax-class=".90" class="copy lax-fadein">
+
       <?php if ($lang=='en'){ ?>
+
         <h2>Accommodations</h2>
         <p>Let us know your preference what you looking for, budget or nice and unique accommodations, B&B’s were possible or lodge away from it all. In general, the more remote the more expensive, as it cost a lot to build, maintain, bring supplies out there and also the journey to get there will cost you more.</p>
         <a class="btn" href="accommodations.php"><strong>Learn More</strong></a>
+
       <?php } else { ?>
+
         <h2>Unterkünfte</h2>
         <p>Erfahren Sie mehr:<br>
         Entsprechend Ihren Vorlieben suchen wir für Sie die passenden Unterkünfte: Wollen Sie eine gute und günstige Bleibe oder eine aussergewöhnliche Unterkunft im höheren Preissegment? Eine Bed & Breakfast (B&B)-Option oder eine Lodge inmitten der Wildnis? Allgemein lässt sich sagen, dass eine Unterkunft mit zunehmender Distanz von der Zivilisation aufgrund der höheren Bau- und Unterhaltskosten teurer wird. Hinzu kommen die höheren Transportkosten, um an diese abgelegenen Orte zu kommen.</p>
         <a class="btn" href="accommodations.php?de"><strong>Erfahre mehr</strong></a>
         <p>Unterkünfte in der Stadt – Je nach Reiseroute bietet sich eine Unterkunft in der Stadt (im Stadtzentrum) oder in Flughafennähe an.</p>
+
       <?php } ?>
+
       <p>&nbsp;</p>
     </div>
     <div class="thumbs">
@@ -81,13 +94,17 @@ include('includes/head.php');
   <div data-bg="0" data-lax="y:-150"></div>
   <div class="content">
     <div data-lax-class=".90" class="copy copy-fullwidth lax-fadein">
+
       <?php if ($lang=='en'){ ?>
+
         <h2>Wildlife viewing</h2>
         <p>Wildlife viewing & photography is growing in popularity. We can recommend you great places and season to view the wild animals in the Northwest. Many Lodges and Cruises offer fantastic viewing opportunities, but also along the road there are places that offer good chances to see animals.</p>
         <p>Bird migration in the spring: Cordova & Homer are just two places that birds will stop in May on the way to there northern nesting grounds.</p>
         <p>In November more than 3500 bald eagles gather in the Chilkat Valley near Haines, AK. Brown Bears & Black Bears are easiest to photograph along the coast, while grazing, clamming and fishing from June till September. Polar Bears are seen along the North Slope around September / October. Of course there are much more like Moose, Caribou if you are lucky Wolf & Lynx and if you don’t mind travel quite remote even Walrus.</p>
         <a class="btn btn-light" href="transportation.php"><strong>Learn More</strong></a>
+
       <?php } else { ?>
+
         <h2>Tierbeobachtung</h2>
         <p>Tierbeobachtung und Tierphotographie erfreuen sich zunehmender Beliebtheit. Wir können Ihnen besonders gute Tierbeobachtungsorte empfehlen, insbesondere im Nordwesten Alaskas. Viele abgelegenere Unterkünfte (Lodges) und auch die Kreuzfahrten eignen sich besonders für die Tierbeobachtung. Aber auch entlang Alaskas` Strassen sind die Chancen, Tiere in freier Wildbahn anzutreffen, sehr gut.</p>
         <p>Wanderungen der Zugvögel im Frühling: Cordova und Homer sind zwei ausgezeichnete Orte, um Zugvögel auf ihrer Reise in den hohen Norden zu beobachten.</p>
@@ -95,9 +112,11 @@ include('includes/head.php');
         <p>Weidende und fischende Braun- und Schwarzbären kann man am besten von Juni bis September entlang der Küste beobachten. Im September und Oktober stehen die Chancen nicht schlecht, um an der Nordküste Alaskas Eisbären beobachten zu können.</p>
         <p>Elche und Karibus sind keine Seltenheit, im Gegensatz dazu braucht es für die Beobachtung von Wölfen und Luchsen mehr Glück. Wenn Sie eine Reise an ganz abgelegene Orte nicht scheuen, können Sie auch Walrosse beobachten.</p>
         <a class="btn btn-light" href="transportation.php?de"><strong>Erfahre mehr</strong></a>
+
       <?php } ?>
+
     </div>
-      <br>
+    <br>
   </div>
 </article>
 
