@@ -128,7 +128,7 @@ doc.ready(function(){
     var bg = $(this);
     var bgs = bg.find('[data-bg]');
     var parent = bg.parent();
-    var ind = $('<span class="bgs-ind" data-lax="y:40,opacity:0"></span>').appendTo(parent);
+    var ind = $('<span class="bgs-ind" data-lax="y:40"></span>').appendTo(parent);
     
     bgs.each(function(i){
       var b = $(this).attr('preloading', true);
