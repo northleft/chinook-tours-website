@@ -157,6 +157,9 @@ h3{
 h1{
   font-size: 50px;
 }
+.internal h1{
+  text-align: center;
+}
 section h1{
   padding: 0px 0px 80px;
 }
@@ -327,9 +330,15 @@ nav li span{
   padding: 10px;
 }
 
-section > div{
-  
+/*
+section{
+  background: #ececec;
 }
+section > div{
+  background: #fff;
+  margin-top: 20px;
+}
+*/
 section > div div:empty{
   background: #007EA7;
   display: block;
@@ -756,6 +765,7 @@ nav li{
   text-align: center;
 }
 
+/*
 #read-more div{
   display: block;
   position: relative;
@@ -772,6 +782,7 @@ nav li{
 #read-more > div div{
   max-width: 600px;
 }
+*/
 
 #top h2{
   display: block;

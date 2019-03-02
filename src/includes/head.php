@@ -44,5 +44,5 @@ if (isset($_GET['de'])){
 	<link rel="stylesheet" href="<?php echo $path; ?>assets/global.css">
 	<script src="<?php echo $path; ?>assets/global.js"></script>
 </head>
-<body id="<?php echo $body_id; ?>" data-language="">
+<body id="<?php echo $body_id; ?>" class="<?php echo $body_class; ?>" data-language="<?php echo $lang; ?>">
   <main><div>

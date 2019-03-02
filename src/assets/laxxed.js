@@ -266,6 +266,8 @@
       lx.height = tb.height;
       lx.trigger = lx.top - lx.height * lx.pct;
     }
+
+    laxSetTop(top);
   }
 
   var laxSetTop;

@@ -71,25 +71,6 @@ var
   wbottom
 ;
 
-/*
-win = $(window);
-win
-.on('resize', function(){
-  ww = win.width();
-  wh = win.height();
-  wx = ww / 2;
-  wy = wh / 2;
-  wtop = win.scrollTop();
-  wbottom = wtop + wh;
-})
-.on('scroll', function(e){
-  //console.log(e);
-  wtop = win.scrollTop();
-  wbottom = wtop + wh;
-})
-.trigger('resize');
-*/
-
 doc.ready(function(){
   win = $(window);
   body = $('body');
@@ -142,8 +123,6 @@ doc.ready(function(){
         span: $('<span data-bg-ind="' + i + '"></span>').appendTo(ind)
       });
     });
-
-    console.log(imgLoad);
 
     var slideShoeInt;
 
