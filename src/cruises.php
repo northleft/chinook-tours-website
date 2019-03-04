@@ -20,82 +20,75 @@ include('includes/head.php');
     <div data-bg="2"></div>
     <div data-bg="3"></div>
     <div data-bg="4"></div>
+    <div data-bg="5"></div>
   </div>
 </header>
 
-<?php if ($lang=='en'){ ?>
-  <h1>Alaska Cruises</h1>
-<?php } else { ?>
-  <h1>Alaska Cruises</h1>
-<?php } ?>
-
-<article id="accommodations">
+<article>
   <div class="content">
     <?php if ($lang=='en'){ ?>
-      <h2>Alaska Charters</h2>
-      <p>If you want to experience Alaska up close and personal&hellip; Gigantic icebergs tumbling into the sea&hellip; Eagles over head&hellip; Bears catching salmon&hellip; Untouched rain forests&hellip; Then, Alaska Charters and Adventures can provide your unsurpassed wilderness experience.</p>
-      <p>When you are a guest of Alaska Charters and Adventures, you are special, not a number in a crowd. We will know what your specific interests, limitations and experiential goals are for each excursion even before you arrive. Because our boats travel with 6 or fewer clients (unless your group is larger) we are better able to cater to your objectives and timeframes. Alaska Charters and Adventures carefully tailors every excursion to your personal schedule, interests, and with hopes of exceeding your expectations in every way.</p>
+      <h1>Alaska Cruises</h1>
     <?php } else { ?>
-      <h2>Alaska Charters</h2>
-      <p>If you want to experience Alaska up close and personal&hellip; Gigantic icebergs tumbling into the sea&hellip; Eagles over head&hellip; Bears catching salmon&hellip; Untouched rain forests&hellip; Then, Alaska Charters and Adventures can provide your unsurpassed wilderness experience.</p>
-      <p>When you are a guest of Alaska Charters and Adventures, you are special, not a number in a crowd. We will know what your specific interests, limitations and experiential goals are for each excursion even before you arrive. Because our boats travel with 6 or fewer clients (unless your group is larger) we are better able to cater to your objectives and timeframes. Alaska Charters and Adventures carefully tailors every excursion to your personal schedule, interests, and with hopes of exceeding your expectations in every way.</p>
+      <h1>Kreuzfahrten</h1>
     <?php } ?>
-  </div>
-  <div class="thumbs">
-    <div class="thumbs-col">
-      <figure><a data-fancybox="home-fsh" class="thumbs-34" href="assets/images/home-fishing-0.jpg"><img data-lax-class=".80" class="lax-fadein" src="assets/images/home-fishing-0.jpg" width="300"></a></figure>
-      <figure><a data-fancybox="home-fsh" class="thumbs-34" href="assets/images/home-fishing-2.jpg"><img data-lax-class=".80" class="lax-fadein" src="assets/images/home-fishing-2.jpg" width="300"></a></figure>
+
+    <?php if ($lang=='en'){ ?>
+      <p>Many Cruise Companies travel along the Inside Passage. Most of them with big ships with 2000 or more pax capacities. I only work with small ship Cruise Companies, from 10 to not even 90 persons on board. It ensures you, that you can visit places that the big guys just can’t get to. Small fjords and the option to get on land and explore the shoreline on foot or with a kayak sounds more exciting to me, than ships with a casino, gym etc. The smaller Cruise Companies have a slower pace, so you will have more time to explore and enjoy nature.</p>
+      <p>The smaller Cruise Ships book out quicker of course, as availability is a lot more limited.</p>
+      <h3>Pre- & Post Cruise Trip planning</h3>
+      <p>We can help you arrange a custom trip before or after your Cruise. Most of the visitors would like to spend some time in Denali Park. Please be aware, that the Denali Park Road does not open till about the first week in June and will close around mid September. Regardless or the road opening you have a chance to see Mt. Denali (former Mt McKinley) if the weather conditions are right, even from Anchorage!</p>
+
+    <?php } else { ?>
+      <p>Viele Kreuzfahrtunternehmen reisen entlang der Inside Passage. Diese Kreuzfahrtschiffe sind riesig und bieten Platz für mehr als 2000 Passagiere. Wir arbeiten nur mit kleinen Schiffunternehmen zusammen, wessen Schiffe maximal 90 Personen befördern können.</p>
+      <p>Das erlaubt Ihnen, an Orte zu gelangen, an welche die grossen Schiffe gar nicht hinkommen. Der Besuch kleiner Fjorde und die Möglichkeit, an Land gehen zu können, zu Fuss oder mit einem Kajak, finden wir spannender als Boardcasinos oder Fitnessstudios. Die kleineren Schiffunternehmen schlagen ein langsameres Tempo an, was Ihnen mehr Zeit bietet, die Landschaft zu erkunden und die Natur zu geniessen.</p>
+      <p>Je kleiner die Schiffe, desto schneller sind sie ausgebucht. Verfügbare Plätze auf den kleinen Schiffen sind dementsprechend rarer!</p>
+      <h3>Zur Organisation Ihrer Reise vor und nach Ihrer Kreuzfahrt</h3>
+      <p>Wir können Ihnen bei der Planung und Buchung ihrer Alaskareise rund um Ihre gewählte Kreuzfahrt helfen. Die meisten Bucher möchten den Denali Nationalpark besuchen. Die Strasse zum Denali Nationalpark ist jedoch nur von Anfang Juni bis Mitte September offen und befahrbar. Unabhängig davon haben Sie aber gute Chancen den Berg Denali (ehemals Mt. McKinley) zu sehen, da er bei gutem Wetter auch von Anchorage aus zu sehen ist.</p>
+    <?php } ?>
+    <!--
+    <div class="thumbs">
+      <figure><a data-fancybox="home-fsh" class="thumbs-34" href="assets/images/home-fishing-0.jpg"><img src="assets/images/home-fishing-0.jpg" width="300"></a></figure>
+      <figure><a data-fancybox="home-fsh" class="thumbs-34" href="assets/images/home-fishing-2.jpg"><img src="assets/images/home-fishing-2.jpg" width="300"></a></figure>
+      <figure><a data-fancybox="home-fsh" class="thumbs-34" href="assets/images/home-fishing-1.jpg"><img src="assets/images/home-fishing-1.jpg" width="300"></a></figure>
     </div>
-    <div class="thumbs-col">
-      <figure><a data-fancybox="home-fsh" class="thumbs-34" href="assets/images/home-fishing-1.jpg"><img data-lax-class=".80" class="lax-fadein" src="assets/images/home-fishing-1.jpg" width="300"></a></figure>
-    </div>
+    -->
   </div>
 </article>
 
-
-<section><div>
-
-
-
-  <?php if ($lang=='en'){ ?>
-    <h2>Alaska Charters</h2>
-    <div class="copy">
-      <p>If you want to experience Alaska up close and personal&hellip; Gigantic icebergs tumbling into the sea&hellip; Eagles over head&hellip; Bears catching salmon&hellip; Untouched rain forests&hellip; Then, Alaska Charters and Adventures can provide your unsurpassed wilderness experience.</p>
-      <p>When you are a guest of Alaska Charters and Adventures, you are special, not a number in a crowd. We will know what your specific interests, limitations and experiential goals are for each excursion even before you arrive. Because our boats travel with 6 or fewer clients (unless your group is larger) we are better able to cater to your objectives and timeframes. Alaska Charters and Adventures carefully tailors every excursion to your personal schedule, interests, and with hopes of exceeding your expectations in every way.</p> 
-    </div>
-  <?php } else { ?>
-    <h2>Alaska Charters</h2>
-    <div class="copy">
-      <p>If you want to experience Alaska up close and personal&hellip; Gigantic icebergs tumbling into the sea&hellip; Eagles over head&hellip; Bears catching salmon&hellip; Untouched rain forests&hellip; Then, Alaska Charters and Adventures can provide your unsurpassed wilderness experience.</p>
-      <p>When you are a guest of Alaska Charters and Adventures, you are special, not a number in a crowd. We will know what your specific interests, limitations and experiential goals are for each excursion even before you arrive. Because our boats travel with 6 or fewer clients (unless your group is larger) we are better able to cater to your objectives and timeframes. Alaska Charters and Adventures carefully tailors every excursion to your personal schedule, interests, and with hopes of exceeding your expectations in every way.</p> 
-    </div>
-  <?php } ?>
-  
-  
-      
-  <div class="thumbs">
-    <div class="thumbs-col">
-      <figure><a data-fancybox="home-fsh" class="thumbs-34" href="assets/images/home-fishing-0.jpg"><img data-lax-class=".80" class="lax-fadein" src="assets/images/home-fishing-0.jpg" width="300"></a></figure>
-      <figure><a data-fancybox="home-fsh" class="thumbs-34" href="assets/images/home-fishing-2.jpg"><img data-lax-class=".80" class="lax-fadein" src="assets/images/home-fishing-2.jpg" width="300"></a></figure>
-    </div>
-    <div class="thumbs-col">
-      <figure><a data-fancybox="home-fsh" class="thumbs-34" href="assets/images/home-fishing-1.jpg"><img data-lax-class=".80" class="lax-fadein" src="assets/images/home-fishing-1.jpg" width="300"></a></figure>
-    </div>
+<article>
+  <div class="content">
+    <?php if ($lang=='en'){ ?>
+      <h2>The Boat Company</h2>
+      <p>Operates two boats from Juneau to Sitka or vice versa from mid May till September. Great service, fantastic boats, you have the option to kayak, hike or fish during your cruise. Boats are for 22 & 24 pax maximum. All cabins have own bath/shower.</p>
+    <?php } else { ?>
+      <h2>The Boat Company</h2>
+      <p>Das Unternehmen betreibt von Mitte Mai bis September zwei Kleinschiffe mit maximal 22 respektive 24 Plätzen, die zwischen Juneau und Sitka verkehren. Nebst grossartigem Service auf den Schiffen haben Sie die Möglichkeit, auf der Reise auch zu kajaken, zu wandern und/oder zu fischen. Alle Schiffskabinen haben ein eigenes Bad mit Dusche.</p>
+    <?php } ?>
   </div>
+</article>
 
-  <?php if ($lang=='en'){ ?>
-    <h2>Discover Cruise West&rsquo;s Alaska Cruises</h2>
-  <?php } else { ?>
-    <h2>Alaska Cruises</h2>
-  <?php } ?>
-  
-  <div>
-    <p>Over 1.5 million people will visit Alaska this year, the vast majority arriving by 3,000+ passenger cruise ships that crowd into a handful of Alaska’s largest ports. While these huge vessels have their onboard attractions, small-ship guests know there’s a better, more intimate way to experience the “real” Alaska: the up-close, casual and personal way.</p>
-    <p>Cruise West small ships carry 78 to 138 guests and show you an Alaska the big ships can’t — up narrow channels and into secluded waterways, positioning in the ideal spots and pausing to catch every spectacular display of scenery and wildlife. Sail this summer in the company of naturalist guides and a small number of people who share a passion for exploration and discovery. Experience Alaska at its best with Cruise West. With over 60 years of experience exploring Alaska’s rugged coastlines, ice-carved fjords, towering glaciers and wild interior, not only do we have an intimate knowledge of its land and waters, but we are also allowed more permits than any other cruise line in Glacier Bay National Park and Preserve. Our 8 Alaska itineraries range from 3- and 4-night getaways in Glacier Bay or Prince William Sound to classic Inside Passage trips with true wilderness exploration to epic 25-day cruises to the far reaches of the Bering Sea. All of our cruises can be combined seamlessly with Cruise West land tours in Denali National Park and Preserve, Fairbanks and Anchorage. So no matter what you’re after, you’re bound to find an Alaska vacation that fits your interests, your timeframe and your budget.</p>
-    <p><a href="http://www.cruisewest.com/alaska-cruises-videos">Click here</a> to view our video gallery of Alaskan Adventures</p>
+<article>
+  <div class="content">
+    <?php if ($lang=='en'){ ?>
+      <h2>Pacific Catalyst</h2>
+      <p>Operates two boats in the Inside Passage, Pacific Northwest & Baja. The boats are designed for 10 & 12 guests. Great choice if you like to explore off the beaten path and love adventures, not only on board but also in a kayak or ashore. </p>
+    <?php } else { ?>
+      <h2>Pacific Catalyst</h2>
+      <p>Das Unternehmen betreibt zwei Kleinkreuzfahrtschiffe in der Inside Passage, der Pacific Northwest und der Baja Region. Ihre Boote bieten 10 respektive 12 Personen Platz. Dies sollte das Unternehmen Ihrer Wahl sein, wenn Sie gerne Orte weit ab der ausgetretenen Pfade erforschen möchten und wenn Sie kleine Abenteuer mögen wie etwa Kajakfahrten oder Landgänge.</p>
+    <?php } ?>
   </div>
-</div>
-    
-</div></section>
+</article>
+
+<article>
+  <div class="content">
+    <?php if ($lang=='en'){ ?>
+      <h2>UnCruise Adventure</h2>
+      <p>Operate 9 ships from 22 to 86 guest in range. With itineraries along the Inside Passage (and also Mexico, Panama/Costa Rica and Hawaii). Many great itineraries with lots of choices and varieties in adventures.</p>
+    <?php } else { ?>
+      <h2>UnCruise Adventure</h2>
+      <p>Das Unternehmen betreibt neun Schiffe unterschiedlicher Grösse (22 bis 86 Passagiere) entlang der Inside Passage. Es erwarten Sie grossartige Reiserouten mit vielen Optionen und unzähligen Abenteuern.</p>
+    <?php } ?>
+  </div>
+</article>
 
 <?php include('includes/foot.php'); ?>
