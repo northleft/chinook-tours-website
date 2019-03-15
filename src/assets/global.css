@@ -2,20 +2,19 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;}
 
 html{
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 body{
   background: #fff;
-	
   width: 100%;
   
   color: #494949;
   /*font-family: 'Open Sans', sans-serif;*/
   font-family: Georgia, serif;
-	font-size: 18px;
-	font-weight: 300;
-	line-height: 1.5em;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5em;
   
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -45,20 +44,20 @@ body#holme{
 @media only screen
 and (min-width : 0px)
 and (max-width : 767px){
-	body{
-		font-size: 16px;
-	}
+  body{
+    font-size: 16px;
+  }
 }
 strong{
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .preload{
-	display: block;
-	position: absolute;
-	float: none;
-	top: -100px;
-	left: -100px;
+  display: block;
+  position: absolute;
+  float: none;
+  top: -100px;
+  left: -100px;
   width: 10px;
   height: 10px;
 }
@@ -99,7 +98,7 @@ a{
 
 
 br, .clear{
-	clear: both;
+  clear: both;
 }
 .no-clear,
 .noclear{
@@ -110,7 +109,7 @@ br, .clear{
 }
 sup,
 sub{
-	position: relative;
+  position: relative;
   font-size: .65em;
   line-height: 0em;
   text-transform: none;
@@ -119,10 +118,10 @@ sup{
   vertical-align: super;
 }
 sup a{
-	text-decoration: none;
+  text-decoration: none;
 }
 sub{
-	top: 2px;
+  top: 2px;
 }
 aside sup{
 }
@@ -144,7 +143,7 @@ li{
   padding: 0px 0px 12px;
   clear: both;
   font-size: inherit;
-	font-weight: normal;
+  font-weight: normal;
 }
 h1,
 h2,
@@ -170,10 +169,10 @@ h3{
   font-size: 24px;
 }
 ul ul{
-	padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 li:last-child{
-	padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 p sup,
@@ -182,7 +181,7 @@ li sup{
 }
 
 a{
-	color: inherit;
+  color: inherit;
 }
 
 @media only screen
@@ -877,4 +876,16 @@ nav li{
   right: 0px;
   transform: translate(0px, -50%);
   font-size: 68px;
+}
+
+.gallery,
+.gallery figure,
+.gallery figure a,
+.gallery figure a img{
+  display: block;
+  position: relative;
+  float: left;
+}
+.gallery figure{
+  margin: 0px 12px 12px 0px;
 }
