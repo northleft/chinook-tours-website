@@ -127,6 +127,24 @@ include('includes/head.php');
       <h2>UnCruise Adventure</h2>
       <p>Das Unternehmen betreibt neun Schiffe unterschiedlicher Grösse (22 bis 86 Passagiere) entlang der Inside Passage. Es erwarten Sie grossartige Reiserouten mit vielen Optionen und unzähligen Abenteuern.</p>
     <?php } ?>
+    <div class="gallery">
+      <figure>
+        <a data-fancybox="ua" href="assets/images/cruises/uncruise-adventure-0.jpg">
+          <img src="assets/images/cruises/uncruise-adventure-0-thumb@2x.jpg" width="150">
+        </a>
+      </figure>
+      <figure>
+        <a data-fancybox="ua" href="assets/images/cruises/uncruise-adventure-1.jpg">
+          <img src="assets/images/cruises/uncruise-adventure-1-thumb@2x.jpg" width="150">
+        </a>
+      </figure>
+      <figure>
+        <a data-fancybox="ua" href="assets/images/cruises/uncruise-adventure-2.jpg">
+          <img src="assets/images/cruises/uncruise-adventure-2-thumb@2x.jpg" width="150">
+        </a>
+      </figure>
+    </div>
+    <p>&nbsp;</p>
   </div>
 </article>
 
