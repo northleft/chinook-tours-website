@@ -84,6 +84,7 @@ include('includes/head.php');
         </a>
       </figure>
     </div>
+    <p>&nbsp;</p>
   </div>
 </article>
 
@@ -96,6 +97,24 @@ include('includes/head.php');
       <h2>Pacific Catalyst</h2>
       <p>Das Unternehmen betreibt zwei Kleinkreuzfahrtschiffe in der Inside Passage, der Pacific Northwest und der Baja Region. Ihre Boote bieten 10 respektive 12 Personen Platz. Dies sollte das Unternehmen Ihrer Wahl sein, wenn Sie gerne Orte weit ab der ausgetretenen Pfade erforschen möchten und wenn Sie kleine Abenteuer mögen wie etwa Kajakfahrten oder Landgänge.</p>
     <?php } ?>
+    <div class="gallery">
+      <figure>
+        <a data-fancybox="pc" href="assets/images/cruises/pacific-catalyst-0.jpg">
+          <img src="assets/images/cruises/pacific-catalyst-0-thumb@2x.jpg" width="150">
+        </a>
+      </figure>
+      <figure>
+        <a data-fancybox="pc" href="assets/images/cruises/pacific-catalyst-1.jpg">
+          <img src="assets/images/cruises/pacific-catalyst-1-thumb@2x.jpg" width="150">
+        </a>
+      </figure>
+      <figure>
+        <a data-fancybox="pc" href="assets/images/cruises/pacific-catalyst-2.jpg">
+          <img src="assets/images/cruises/pacific-catalyst-2-thumb@2x.jpg" width="150">
+        </a>
+      </figure>
+    </div>
+    <p>&nbsp;</p>
   </div>
 </article>
 
