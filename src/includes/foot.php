@@ -31,6 +31,8 @@
         <li><a href="accommodations.php"><span>Accommodations</span></a></li>
         <li><a href="fishing.php"><span>Fishing</span></a></li>
         <li><a href="cruises.php"><span>Alaska Cruises</span></a></li>
+        <li><a href="wildlife.php"><span>Wildlife Cruises</span></a></li>
+        <li><a href="transportation.php"><span>Transportation</span></a></li>
         <li><a href="<?php echo basename($_SERVER['REQUEST_URI']).'?de'; ?>"><span>DE</span></a></li>
       </ul>
     <?php } else { 
@@ -43,6 +45,8 @@
         <li><a href="accommodations.php?de"><span>Accommodations</span></a></li>
         <li><a href="fishing.php?de"><span>Fishing</span></a></li>
         <li><a href="cruises.php?de"><span>Alaska Cruises</span></a></li>
+        <li><a href="wildlife.php?de"><span>Wildlife Cruises</span></a></li>
+        <li><a href="transportation.php?de"><span>Transportation</span></a></li>
         <li><a href="<?php echo $file; ?>"><span>EN</span></a></li>
       </ul>
     <?php } ?>
