@@ -174,6 +174,10 @@
 
     _win
     .on('mousewheel wheel DOMMouseScroll', function(e){
+      
+      //if (e.preventDefault) e.preventDefault();
+      //e.returnValue = false;
+      
       if (e.originalEvent){
         e = e.originalEvent;
       }
@@ -196,9 +200,6 @@
         scrollTo: top,
         ease: Power4.easeOut
       });
-      
-      if (e.preventDefault) e.preventDefault();
-      e.returnValue = false;
     });
   }
   smoothscroll.setup = _setupScroll;

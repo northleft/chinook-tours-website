@@ -49,9 +49,9 @@
 	_browser.version = parseInt(_browser.version);
 })();
 
-if (!_browser.mobile){
-  smoothscroll.setup();
-}
+//if (!_browser.mobile){
+//  smoothscroll.setup();
+//}
 
 //SmoothScroll({ stepSize: 25 })
 

@@ -29,13 +29,14 @@ if (isset($_GET['de'])){
 
 	<script src="https://cdn.jsdelivr.net/npm/greensock@1.20.2/dist/TweenLite.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/greensock@1.20.2/dist/plugins/CSSPlugin.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/greensock@1.20.2/dist/plugins/ScrollToPlugin.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/iscroll@5.2.0/build/iscroll-probe.min.js"></script>
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/greensock@1.20.2/dist/plugins/ScrollToPlugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iscroll@5.2.0/build/iscroll-probe.min.js"></script>
+	<script src="<?php echo $path; ?>assets/smother-scroll.js"></script>
+  -->
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   
-	<script src="<?php echo $path; ?>assets/smother-scroll.js"></script>
 	<script src="<?php echo $path; ?>assets/laxxed.js"></script>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">

@@ -27,12 +27,12 @@
     <?php if ($lang=='en'){ ?>
       <a href="index.php"><img src="assets/images/nav-ct.svg" width="320" alt="Chinook Tours Alaska"></a>
       <ul>
-        <li><a href="index.php"><span>Home</span></a></li>
-        <li><a href="accommodations.php"><span>Accommodations</span></a></li>
-        <li><a href="fishing.php"><span>Fishing</span></a></li>
-        <li><a href="cruises.php"><span>Alaska Cruises</span></a></li>
-        <li><a href="wildlife.php"><span>Wildlife Cruises</span></a></li>
-        <li><a href="transportation.php"><span>Transportation</span></a></li>
+        <li id="nav-home"><a href="index.php"><span>Home</span></a></li>
+        <li id="nav-accommodations"><a href="accommodations.php"><span>Accommodations</span></a></li>
+        <li id="nav-fishing"><a href="fishing.php"><span>Fishing</span></a></li>
+        <li id="nav-cruises"><a href="cruises.php"><span>Alaska Cruises</span></a></li>
+        <li id="nav-wildlife"><a href="wildlife.php"><span>Wildlife Cruises</span></a></li>
+        <li id="nav-transportation"><a href="transportation.php"><span>Transportation</span></a></li>
         <li><a href="<?php echo basename($_SERVER['REQUEST_URI']).'?de'; ?>"><span>DE</span></a></li>
       </ul>
     <?php } else { 

@@ -352,6 +352,15 @@ and (min-width : 767px){
     line-height: 21px;
     vertical-align: middle;
   }
+  #home nav li#nav-home span,
+  #accommodations nav li#nav-accommodations span,
+  #fishing nav li#nav-fishing span,
+  #cruises nav li#nav-cruises span,
+  #wildlife nav li#nav-wildlife span,
+  #transportation nav li#nav-transportation span{
+    background: rgba(255, 255, 255, .4);
+    border-radius: 8px;
+  }
 }
 @media only screen
 and (min-width : 0px)
@@ -850,6 +859,32 @@ header .bgs{
   }
   #wildlife header [data-bg="4"]{
     background-image: url(images/wildlife-4-2000.jpg);
+  }
+}
+#transportation header [data-bg="0"]{
+  background-image: url(images/transportation-0-1200.jpg);
+}
+#transportation header [data-bg="1"]{
+  background-image: url(images/transportation-1-1200.jpg);
+}
+#transportation header [data-bg="2"]{
+  background-image: url(images/transportation-2-1200.jpg);
+}
+#transportation header [data-bg="3"]{
+  background-image: url(images/wildlife-3-1200.jpg);
+}
+@media only screen and (min-width : 1200px){
+  #transportation header [data-bg="0"]{
+    background-image: url(images/transportation-0-2000.jpg);
+  }
+  #transportation header [data-bg="1"]{
+    background-image: url(images/transportation-1-2000.jpg);
+  }
+  #transportation header [data-bg="2"]{
+    background-image: url(images/transportation-2-2000.jpg);
+  }
+  #transportation header [data-bg="3"]{
+    background-image: url(images/wildlife-3-2000.jpg);
   }
 }
 

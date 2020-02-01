@@ -20,8 +20,6 @@ include('includes/head.php');
     <div data-bg="2"></div>
     <div data-bg="3"></div>
     <div data-bg="4"></div>
-    <div data-bg="5"></div>
-    <div data-bg="6"></div>
   </div>
 </header>
 
